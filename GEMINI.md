@@ -13,3 +13,8 @@
 - All backend engineering concepts must be taught from pure computer science and systems architecture first principles.
 - Explanations must be stack- and language-agnostic (applicable across Go, Rust, Java, Node.js, Python, C#, etc.).
 - Never bias or anchor explanations to SAP-specific tools, frameworks, or cloud products (e.g., CAP, Approuter, XSUAA, BTP) unless specifically and explicitly requested by the user.
+
+## Zero-Prerequisite / 0-to-100 Foundation Rule
+- Teach from absolute zero. Assume no prior backend or networking prerequisites.
+- Never drop an acronym, technical buzzword, or abstract term (e.g., stateless, idempotent, TCP, TLS, RFC, DNS, socket, packet, byte, port, serialization, cipher) without immediately explaining what it means in plain English, why it exists, and the physical or architectural problem it solves.
+- Build concepts strictly step-by-step: fundamental problem -> physical/logical mechanism -> formal specification -> real-world system behavior.

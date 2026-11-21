@@ -22,7 +22,7 @@ Sections are a catalog, not a strict sequence. Prerequisites to respect:
 ---
 
 ## 1. Backend Fundamentals
-- [ ] **[CORE]** HTTP and HTTPS (Methods, status codes, headers, HTTP/1.1 vs 2 vs 3, TLS 1.3, ports)
+- [x] **[CORE]** HTTP and HTTPS (Methods, status codes, headers, HTTP/1.1 vs 2 vs 3, TLS 1.3, ports)
 - [ ] **[CORE]** Request–response lifecycle (Sockets, DNS, TCP, serialization, lifecycle)
 - [ ] **[CORE]** REST API design (Resources, verbs, idempotent methods, filtering, error format)
 - [ ] **[CORE]** Input validation & error handling (Schema validation, fail-fast, consistent error responses, RFC 9457)
@@ -248,8 +248,8 @@ Where each concept lands on SAP BTP. Product names are from memory and change of
 ---
 
 ### Progress Tracker
-- **Core Track:** 0 / 71 topics completed
+- **Core Track:** 1 / 71 topics completed
 - **Systems Edge Track:** 0 / 58 topics completed
 - **Managed/Optional:** 10 topics (reference)
-- **Active Topic:** 1. HTTP and HTTPS (next: 2. Request–response lifecycle)
+- **Active Topic:** 2. Request–response lifecycle (next: 3. REST API design)
 - *Counts verified with `grep` on the tier markers. Recount after any edit.*
