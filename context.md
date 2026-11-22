@@ -11,10 +11,11 @@
    - Teach from absolute zero. Assume no prior backend or networking knowledge.
    - Never introduce an acronym, protocol, or technical term (e.g., stateless, idempotent, TCP, TLS, RFC, DNS, socket, packet, byte, port) without immediately defining it in plain, intuitive English and explaining *why* it exists and *what problem* it solves.
    - Build step-by-step: First principles -> Mechanics -> Real-world execution. No conceptual leaps.
-3. **Three-Tier Explanation Format (Intuition first, depth last):**
+3. **Three-Tier Explanation Format & Calibrated Depth Dial:**
+   - **Calibrated Depth Dial:** Focus strictly at the **Architectural & Application Level (L4–L7 & Software Architecture)**. Avoid low-level OS kernel drivers, NIC hardware interrupts, or CPU assembly internals. Focus on what engineers design, build, and optimize: networking boundaries, APIs, data flows, caching, latency, security, and distributed systems.
    - **1. Easy Definition:** Plain English, zero fluff, intuitive explanation of what it is, why it was invented, and the exact problem it solves. Every term broken down word-for-word.
    - **2. Real-World Analogy:** Relatable everyday analogy mapping 1:1 to each technical component.
-   - **3. Technical Deep Dive (0-to-100 First Principles):** Universal, stack- and language-agnostic backend engineering. Explain the underlying hardware/networking mechanics, message formats, step-by-step data flows, and security from scratch.
+   - **3. Technical Deep Dive (0-to-100 First Principles):** Universal, stack- and language-agnostic backend engineering. Explain the architecture, message formats, step-by-step data flows, and systems design from scratch.
 4. **Interactive Discussion Loop:**
    - Deep dive into one topic at a time.
    - Kunal asks counter-questions, tests edge cases, and clarifies doubts.
@@ -29,8 +30,8 @@
 ## 3. Current Learning State
 - **Active Track:** Option A — Streamlined for Enterprise SAP BTP & AI Architecture
 - **Active Section:** 1. Backend Fundamentals
-- **Active Topic:** 2. Request–response lifecycle
-- **Progress:** 1 / 71 Core Topics Completed (1 / 129 Core + Edge Topics; 10 Managed are reference-only)
+- **Active Topic:** 3. REST API design
+- **Progress:** 2 / 71 Core Topics Completed (2 / 129 Core + Edge Topics; 10 Managed are reference-only)
 - **Scope:** Phase 1 = Backend (Sections 1–12). Phase 2 = AI Engineering (Sections 13–16). Checklist reviewed and expanded on 2026-11-20.
 
 ---
@@ -41,15 +42,16 @@
 | # | Section | Topic | Status | Completed Date | Key Takeaway / Resolution |
 |---|---------|-------|--------|----------------|---------------------------|
 | 1 | 1. Backend Fundamentals | HTTP and HTTPS | ✅ Completed | 2026-11-21 | Wire format (headers/body), safe/idempotent methods, status code families, TLS 1.3 handshake, and QUIC/UDP stream independence solving TCP HoL blocking. Notes saved in [01_http_and_https.md](file:///home/shrik/Learn%20BEAI/notes/01_http_and_https.md). |
-| 2 | 1. Backend Fundamentals | Request–response lifecycle | 🔄 In Progress | - | Sockets, DNS resolution, TCP handshake, serialization/deserialization, OS kernel to web server data flow. |
+| 2 | 1. Backend Fundamentals | Request–response lifecycle | ✅ Completed | 2026-11-22 | Calibrated L4-L7 lifecycle: DNS TTL & caching, connection pooling / keep-alive latency, serialization (RAM to JSON bytes), ingress-to-app pipeline, and error boundaries (4xx vs 5xx). Notes saved in [02_request_response_lifecycle.md](file:///home/shrik/Learn%20BEAI/notes/02_request_response_lifecycle.md). |
+| 3 | 1. Backend Fundamentals | REST API design | 🔄 In Progress | - | Resources, HTTP verbs, idempotent operations, query filtering/sorting/pagination, RFC 9457 error contracts. |
 
 ---
 
 ## 5. Upcoming Topics Queue (Section 1: Backend Fundamentals)
 *(Mirrors Section 1 of the checklist, line for line.)*
 1. HTTP and HTTPS (Completed)
-2. Request–response lifecycle (Active)
-3. REST API design
+2. Request–response lifecycle (Completed)
+3. REST API design (Active)
 4. Input validation & error handling
 5. Middleware
 6. Authentication and authorization
