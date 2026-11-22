@@ -30,8 +30,8 @@
 ## 3. Current Learning State
 - **Active Track:** Option A — Streamlined for Enterprise SAP BTP & AI Architecture
 - **Active Section:** 1. Backend Fundamentals
-- **Active Topic:** 4. Input validation & error handling
-- **Progress:** 3 / 71 Core Topics Completed (3 / 129 Core + Edge Topics; 10 Managed are reference-only)
+- **Active Topic:** 5. Middleware
+- **Progress:** 4 / 71 Core Topics Completed (4 / 129 Core + Edge Topics; 10 Managed are reference-only)
 - **Scope:** Phase 1 = Backend (Sections 1–12). Phase 2 = AI Engineering (Sections 13–16). Checklist reviewed and expanded on 2026-11-20.
 
 ---
@@ -44,7 +44,8 @@
 | 1 | 1. Backend Fundamentals | HTTP and HTTPS | ✅ Completed | 2026-11-21 | Wire format (headers/body), safe/idempotent methods, status code families, TLS 1.3 handshake, and QUIC/UDP stream independence solving TCP HoL blocking. Notes saved in [01_http_and_https.md](file:///home/shrik/Learn%20BEAI/notes/01_http_and_https.md). |
 | 2 | 1. Backend Fundamentals | Request–response lifecycle | ✅ Completed | 2026-11-22 | Calibrated L4-L7 lifecycle: DNS TTL & caching, connection pooling / keep-alive latency, serialization (RAM to JSON bytes), ingress-to-app pipeline, and error boundaries (4xx vs 5xx). Notes saved in [02_request_response_lifecycle.md](file:///home/shrik/Learn%20BEAI/notes/02_request_response_lifecycle.md). |
 | 3 | 1. Backend Fundamentals | REST API design | ✅ Completed | 2026-11-22 | Resources as nouns, HTTP verb CRUD mapping, PATCH non-idempotence (RFC 5789 delta/mutation vs absolute values), query params, and RFC 9457 error contracts. Notes saved in [03_rest_api_design.md](file:///home/shrik/Learn%20BEAI/notes/03_rest_api_design.md). |
-| 4 | 1. Backend Fundamentals | Input validation & error handling | 🔄 In Progress | - | Schema validation, fail-fast boundary, structured 4xx error formatting, and defensive backend programming. |
+| 4 | 1. Backend Fundamentals | Input validation & error handling | ✅ Completed | 2026-11-22 | Syntactic (schema) vs semantic (business) validation, fail-fast boundary at controller, RFC 9457 structured errors, and dual-logging to prevent security leaks. Notes saved in [04_input_validation_and_error_handling.md](file:///home/shrik/Learn%20BEAI/notes/04_input_validation_and_error_handling.md). |
+| 5 | 1. Backend Fundamentals | Middleware | 🔄 In Progress | - | Interception chain, onion pattern, pipeline architecture, short-circuiting, and cross-cutting concerns. |
 
 ---
 
@@ -53,9 +54,10 @@
 1. HTTP and HTTPS (Completed)
 2. Request–response lifecycle (Completed)
 3. REST API design (Completed)
-4. Input validation & error handling (Active)
-5. Middleware
-5. Middleware
+4. Input validation & error handling (Completed)
+5. Middleware (Active)
+6. Authentication and authorization
+7. Sessions, cookies, and JWT
 6. Authentication and authorization
 7. Sessions, cookies, and JWT
 8. OAuth 2.0
